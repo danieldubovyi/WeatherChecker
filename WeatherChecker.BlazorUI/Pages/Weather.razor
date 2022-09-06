@@ -1,0 +1,83 @@
+﻿@page "/weather"
+
+<PageTitle>Weather checker</PageTitle>
+
+@using WeatherChecker.Application.Interfaces.DataProviders
+@using WeatherChecker.Application.Interfaces.Services
+@using WeatherChecker.Domain.Entities
+@using WeatherChecker.BlazorUI.Data
+@inject WeatherForecastService ForecastService
+@inject IWeatherService WeatherAnalizationsService
+
+
+@if (cities == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <h2>Choose up to five cities:</h2>
+    @foreach (var city in cities)
+    {
+        bool disabled = selectedCities.Count > 4 && !selectedCities.Contains(city.Name);
+        <input disabled=@disabled type="checkbox" @onchange="eventArgs => { OnCitySelected(city.Name, eventArgs.Value); }"/>@city.Name<br />
+    }
+    <h2>Weather for selected cities:</h2>
+    @if(cityWeathers != null)
+    {
+        <table class="table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Name</th>
+                <th>Temperature</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var city in cityWeathers)
+            {
+                <tr>
+                    <td>@city.Description</td>
+                    <td>@city.Name</td>
+                    <td>@city.TempInCelsius</td>
+                </tr>
+            }
+        </tbody>
+        </table>
+    }
+    
+}
+
+@code {
+    private IReadOnlyCollection<City>? cities;
+    private List<string> selectedCities = new List<string>();
+    private IReadOnlyCollection<CityWeather>? cityWeathers;
+
+    protected override void OnInitialized()
+    {
+        cities = WeatherAnalizationsService.GetAllCities();
+        base.OnInitialized();
+    }
+
+    void OnCitySelected(string name, object selected)
+    {
+        if ((bool)selected)
+        {
+            if (!selectedCities.Contains(name))
+            {
+                selectedCities.Add(name);
+            }
+        }
+        else
+        {
+            if (selectedCities.Contains(name))
+            {
+                selectedCities.Remove(name);
+            }
+        }
+
+        cityWeathers = WeatherAnalizationsService.GetCitiesWeather(selectedCities);
+
+    }
+
+}

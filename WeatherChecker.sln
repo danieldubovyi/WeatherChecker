@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherChecker.Application", "WeatherChecker.Application\WeatherChecker.Application.csproj", "{20953F40-35FB-4461-BD20-A7A26806180D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{7BF879CB-91FA-4EDC-B60B-17A0EC1B7A1F}"
+	ProjectSection(SolutionItems) = preProject
+		OpenWeather.http = OpenWeather.http
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherChecker.Domain", "WeatherChecker.Domain\WeatherChecker.Domain.csproj", "{610BBA40-DCBD-49E2-AFA4-DDF5CA661722}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherChecker.Infrastructure.OpenWeather", "WeatherChecker.OpenWeather\WeatherChecker.Infrastructure.OpenWeather.csproj", "{E19A3448-0814-49D7-BF51-8AA3E9880F9A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherChecker.Tests", "WeatherChecker.Tests\WeatherChecker.Tests.csproj", "{47CAD596-9649-43B6-BF9F-14E5A39E947E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherChecker.Infrastructure.Configuration", "WeatherChecker.Infrastructure.Configuration\WeatherChecker.Infrastructure.Configuration.csproj", "{95778FAE-3E7D-4D48-B225-797EFDB82011}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherChecker.BlazorUI", "WeatherChecker.BlazorUI\WeatherChecker.BlazorUI.csproj", "{7FC030B4-057D-4BD5-9A20-D0B923C3438B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20953F40-35FB-4461-BD20-A7A26806180D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20953F40-35FB-4461-BD20-A7A26806180D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20953F40-35FB-4461-BD20-A7A26806180D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20953F40-35FB-4461-BD20-A7A26806180D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{610BBA40-DCBD-49E2-AFA4-DDF5CA661722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610BBA40-DCBD-49E2-AFA4-DDF5CA661722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610BBA40-DCBD-49E2-AFA4-DDF5CA661722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610BBA40-DCBD-49E2-AFA4-DDF5CA661722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E19A3448-0814-49D7-BF51-8AA3E9880F9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E19A3448-0814-49D7-BF51-8AA3E9880F9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E19A3448-0814-49D7-BF51-8AA3E9880F9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E19A3448-0814-49D7-BF51-8AA3E9880F9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47CAD596-9649-43B6-BF9F-14E5A39E947E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CAD596-9649-43B6-BF9F-14E5A39E947E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CAD596-9649-43B6-BF9F-14E5A39E947E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CAD596-9649-43B6-BF9F-14E5A39E947E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95778FAE-3E7D-4D48-B225-797EFDB82011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95778FAE-3E7D-4D48-B225-797EFDB82011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95778FAE-3E7D-4D48-B225-797EFDB82011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95778FAE-3E7D-4D48-B225-797EFDB82011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC030B4-057D-4BD5-9A20-D0B923C3438B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC030B4-057D-4BD5-9A20-D0B923C3438B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC030B4-057D-4BD5-9A20-D0B923C3438B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC030B4-057D-4BD5-9A20-D0B923C3438B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF3840B1-ED3B-4802-A72C-7922EB3DFE80}
+	EndGlobalSection
+EndGlobal

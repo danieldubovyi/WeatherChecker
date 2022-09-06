@@ -1,0 +1,6 @@
+GET https://api.openweathermap.org/data/2.5/onecall?lat=50.1167&lon=8.6833&appid=93836445ebca1a81c1081e8b9fa753f0&cnt=1;
+GET https://api.openweathermap.org/data/2.5/onecall?lat=55.9521&lon=-3.1965&appid=93836445ebca1a81c1081e8b9fa753f0&cnt=1;
+GET https://api.openweathermap.org/data/2.5/onecall?lat=51.5073219&lon=-0.1276474&appid=93836445ebca1a81c1081e8b9fa753f0&cnt=1;
+GET https://api.openweathermap.org/data/2.5/weather?q=Frankfurt&appid=93836445ebca1a81c1081e8b9fa753f0
+GET http://api.openweathermap.org/geo/1.0/direct?q=Magnitogorsk&limit=1&appid=93836445ebca1a81c1081e8b9fa753f0
+
