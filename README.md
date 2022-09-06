@@ -1,2 +1,2 @@
 # WeatherChecker
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://media.giphy.com/media/oT5bqzIqQlkdjgx3B6/giphy.gif)
